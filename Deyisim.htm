@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="Guler">
+    <button onclick="deyisim()">
+        <=>
+    </button>
+    <input type="text" id="Tagizade">
+
+    <script>
+
+        let Guler = document.getElementById("Guler")
+        let Tagizade = document.getElementById("Tagizade")
+        let Bos = ""
+
+        function deyisim() {
+            Bos = Tagizade.value
+            Tagizade.value = Guler.value
+            Guler.value = Bos
+        }
+
+    </script>
+
+
+</body>
+
+</html>
